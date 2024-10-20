@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SeArt | Catalog</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="vendor.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__logo">
+                <a class="logo" href="index.html">
+                    <img src="logo2.svg" alt="Homepage">
+                </a>
+            </div>
+
+            <a class="s-header__menu-toggle" href="#0" class="">
+                <span class="s-header__menu-text">Menu</span>
+                <span class="s-header__menu-icon"></span>
+            </a>
+
+            <nav class="s-header__nav">
+
+                <a href="#0" class="s-header__nav-close-btn" title="close"><span>Close</span></a>
+                <h3>SeArt.corp</h3>
+
+                <ul class="s-header__nav-list">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="products.html" >Products</a></li>                    
+                    <li><a href="services.html" >Services</a></li>
+      
+                </ul>
+
+                <p>
+                    12461 SW 130TH ST Miami, FL 33186, Unit- B7 | (305) 303 9910 | seartcorp1310@gmail.com </p>
+                <ul class="s-header__social">
+                    <li>
+                        <a href="https://www.facebook.com/seartcorp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325,1.42-3.592,3.5-3.592 c0.699-0.002,1.399,0.034,2.095,0.107v2.42h-1.435c-1.128,0-1.348,0.538-1.348,1.325v1.735h2.697l-0.35,2.725h-2.348V21H20 c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z"></path></svg>
+                            <span class="u-screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                   
+                    <li>
+                        <a href="https://www.instagram.com/seartcorp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624 C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003 c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42 c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111 c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71 c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45 c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633 c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311 c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311 c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654 c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712 c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055 c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669 c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"></path></svg>
+                            <span class="u-screen-reader-text">Instagram</span>
+                        </a>
+                    </li>
+                    
+                </ul> 
+
+            </nav>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        
+
+            <!-- about
+            ----------------------------------------------- -->
+           
+
+            <!-- services
+            ----------------------------------------------- -->
+            
+            <!-- portfolio
+            ----------------------------------------------- -->
+            <section id="portfolio" class="s-portfolio">
+
+                <div class="s-portfolio__header">
+
+                    <div class="row narrow section-header section-header--dark has-bottom-sep">
+                        <div class="column lg-12">
+                            
+                            <h3 class="text-pretitle">Regular</h3>
+                            
+                        </div> <!-- end column -->
+                    </div> <!-- end section header -->
+
+                </div> <!-- end s-portfolio__header -->
+
+                <div class="row s-portfolio__content" data-animate-block >
+                    <div class="column lg-12" >
+
+                        <div class="folio-list bricks" >
+         
+                            <div class="brick folio-item" style="width: 50%; " >
+
+                                <div class="folio-item__thumb" >
+                                    <a class="folio-item__thumb-link" href="SB`119631.jpg" Title="119631" data-size="700x700">
+                                        <img src="SB`119631.jpg" 
+                                             srcset="SB`119631.jpg 1x, SB`119631.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">119631</h4>
+                                </div>
+                              <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                    <!--<p>Spectacular frame for works whith pastel color </p>-->
+                                </div>
+                                
+                             </div> <!-- end brick-->
+         
+                            <div class="brick folio-item" style="width: 50%; ">
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`220941.jpg" Title="220941" data-size="700x700">
+                                        <img src="SB`220941.jpg" 
+                                             srcset="SB`220941.jpg 1x, SB`220941.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">220941</h4>
+                                </div>
+                               <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                  <!-- <p>Spectacular frame for works whith dark color.</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+         
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`119630.jpg" Title="119630" data-size="700x700">
+                                        <img src="SB`119630.jpg" 
+                                             srcset="SB`119630.jpg 1x, SB`119630.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">119630</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                           
+                           
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`222940.jpg" Title="222940" data-size="700x700">
+                                        <img src="SB`222940.jpg" 
+                                             srcset="SB`222940.jpg 1x, SB`222940.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">222940</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`b220131009.jpg" Title="B220131009" data-size="700x700">
+                                        <img src="SB`b220131009.jpg" 
+                                             srcset="SB`b220131009.jpg 1x, SB`b220131009.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B220131009</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`214670.jpg" Title="214670" data-size="700x700">
+                                        <img src="SB`214670.jpg" 
+                                             srcset="SB`214670.jpg 1x, SB`214670.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">214670</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`V1367.jpg" Title="V1367" data-size="700x700">
+                                        <img src="SB`V1367.jpg" 
+                                             srcset="SB`V1367.jpg 1x, SB`V1367.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">V1367</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`214660.jpg" Title="214660" data-size="700x700">
+                                        <img src="SB`214660.jpg" 
+                                             srcset="SB`214660.jpg 1x, SB`214660.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">214660</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`214666.jpg" Title="214666" data-size="700x700">
+                                        <img src="SB`214666.jpg" 
+                                             srcset="SB`214666.jpg 1x, SB`214666.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">214666</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+HERE HERE HERE
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="BS`B-950.jpg" Title="B-950" data-size="700x700">
+                                        <img src="BS`B-950.jpg" 
+                                             srcset="BS`B-950.jpg 1x, BS`B-950.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B-950</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`432-12.jpg" Title="432-12" data-size="700x700">
+                                        <img src="SB`432-12.jpg" 
+                                             srcset="SB`432-12.jpg 1x, SB`432-12.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">432-12</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`84153.jpg" Title="84153" data-size="700x700">
+                                        <img src="SB`84153.jpg" 
+                                             srcset="SB`84153.jpg 1x, SB`84153.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">84153</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`272710.jpg" Title="272710" data-size="700x700">
+                                        <img src="SB`272710.jpg" 
+                                             srcset="SB`272710.jpg 1x, SB`272710.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">272710</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`B951.jpg" Title="B951" data-size="700x700">
+                                        <img src="SB`B951.jpg" 
+                                             srcset="SB`B951.jpg 1x, SB`B951.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B951</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`B-960.jpg" Title="B-960" data-size="700x700">
+                                        <img src="SB`B-960.jpg" 
+                                             srcset="SB`B-960.jpg 1x, SB`B-960.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B-960</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`N7-18.jpg" Title="N7-18" data-size="700x700">
+                                        <img src="SB`N7-18.jpg" 
+                                             srcset="SB`N7-18.jpg 1x, SB`N7-18.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">N7-18</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`N1212.jpg" Title="N1212" data-size="700x700">
+                                        <img src="SB`N1212.jpg" 
+                                             srcset="SB`N1212.jpg 1x, SB`N1212.jpg2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">N1212</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`N1512.jpg" Title="N1512" data-size="700x700">
+                                        <img src="SB`N1512.jpg" 
+                                             srcset="SB`N1512.jpg 1x, SB`N1512.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">N1512</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`OM84154.jpg" Title="OM84154" data-size="700x700">
+                                        <img src="SB`OM84154.jpg" 
+                                             srcset="SB`OM84154.jpg 1x, SB`OM84154.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">OM84154</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="SB`OM84156.jpg" Title="OM84156" data-size="700x700">
+                                        <img src="SB`OM84156.jpg" 
+                                             srcset="SB`OM84156.jpg 1x, SB`OM84156.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">OM84156</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+
+                            <div class="brick folio-item" style="width: 50%; " >
+
+                                <div class="folio-item__thumb" >
+                                    <a class="folio-item__thumb-link" href="R`145-73.jpg" Title="145-73" data-size="700x700">
+                                        <img src="R`145-73.jpg" 
+                                             srcset="R`145-73.jpg 1x, R`145-73.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">145-73</h4>
+                                </div>
+                              <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                    <!--<p>Spectacular frame for works whith pastel color </p>-->
+                                </div>
+                                
+                             </div> <!-- end brick-->
+         
+                            <div class="brick folio-item" style="width: 50%; ">
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`246-22.jpg" Title="246-22" data-size="700x700">
+                                        <img src="R`246-22.jpg" 
+                                             srcset="R`246-22.jpg 1x, R`246-22.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">246-22</h4>
+                                </div>
+                               <!-- <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                  <!-- <p>Spectacular frame for works whith dark color.</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+         
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`246-29.jpg" Title="246-29" data-size="700x700">
+                                        <img src="R`246-29.jpg" 
+                                             srcset="R`246-29.jpg 1x, R`246-29.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">246-29</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                           
+                           
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`602-52.jpg" Title="602-52" data-size="700x700">
+                                        <img src="R`602-52.jpg" 
+                                             srcset="R`602-52.jpg 1x, R`602-52.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">602-52</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`1240.jpg" Title="1240" data-size="700x700">
+                                        <img src="R`1240.jpg" 
+                                             srcset="R`1240.jpg 1x, R`1240.jpgR`1240.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">1240</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`207650.jpg" Title="207650" data-size="700x700">
+                                        <img src="R`207650.jpg" 
+                                             srcset="R`207650.jpg 1x, R`207650.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">207650</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`530660.jpg" Title="530660" data-size="700x700">
+                                        <img src="R`530660.jpg" 
+                                             srcset="R`530660.jpg 1x, R`530660.jpg2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">530660</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`B925.jpg" Title="B925" data-size="700x700">
+                                        <img src="R`B925.jpg" 
+                                             srcset="R`B925.jpg 1x, R`B925.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B925</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`B927.jpg" Title="B927" data-size="700x700">
+                                        <img src="R`B927.jpg" 
+                                             srcset="R`B927.jpg 1x, R`B927.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B927</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`B928.jpg" Title="B928" data-size="700x700">
+                                        <img src="R`B928.jpg" 
+                                             srcset="R`B928.jpg 1x, R`B928.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B928</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`G2011.jpg" Title="G2011" data-size="700x700">
+                                        <img src="R`G2011.jpg" 
+                                             srcset="R`G2011.jpg 1x, R`G2011.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">G2011</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`J6002GN.jpg" Title="J6002GN" data-size="700x700">
+                                        <img src="R`J6002GN.jpg" 
+                                             srcset="R`J6002GN.jpg 1x, R`J6002GN.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">J6002GN</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`P2663.jpg" Title="P2663" data-size="700x700">
+                                        <img src="R`P2663.jpg" 
+                                             srcset="R`P2663.jpg 1x, R`P2663.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">P2663</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`P2666.jpg" Title="P2666" data-size="700x700">
+                                        <img src="R`P2666.jpg" 
+                                             srcset="R`P2666.jpg 1x, R`P2666.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">P2666</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`B7521.jpg" Title="B7521" data-size="700x700">
+                                        <img src="R`B7521.jpg" 
+                                             srcset="R`B7521.jpg 1x, R`B7521.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">B7521</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                            <div class="brick folio-item"style="width: 50%; margin-top: 10px;" >
+
+                                <div class="folio-item__thumb">
+                                    <a class="folio-item__thumb-link" href="R`W3020.jpg" Title="W3020" data-size="700x700">
+                                        <img src="R`W3020.jpg" 
+                                             srcset="R`W3020.jpg 1x, R`W3020.jpg 2x" alt="">
+                                    </a>
+                                </div>
+                                <div class="folio-item__info">
+                                    <div class="folio-item__cat">Frame Number</div>
+                                    <h4 class="folio-item__title">W3020</h4>
+                                </div>
+                           <!--     <a href="https://www.behance.net/" title="Project Link" class="folio-item__project-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4.222 19.778a4.983 4.983 0 0 0 3.535 1.462 4.986 4.986 0 0 0 3.536-1.462l2.828-2.829-1.414-1.414-2.828 2.829a3.007 3.007 0 0 1-4.243 0 3.005 3.005 0 0 1 0-4.243l2.829-2.828-1.414-1.414-2.829 2.828a5.006 5.006 0 0 0 0 7.071zm15.556-8.485a5.008 5.008 0 0 0 0-7.071 5.006 5.006 0 0 0-7.071 0L9.879 7.051l1.414 1.414 2.828-2.829a3.007 3.007 0 0 1 4.243 0 3.005 3.005 0 0 1 0 4.243l-2.829 2.828 1.414 1.414 2.829-2.828z"></path><path d="m8.464 16.95-1.415-1.414 8.487-8.486 1.414 1.415z"></path></svg>
+                                </a>-->
+                                <div class="folio-item__caption">
+                                 <!--<p>If you want to create a contrast between your work and the frame, this is your product</p>--> 
+                                </div>
+
+                            </div> <!-- end brick-->
+
+                         
+
+                            
+                           
+
+
+
+                        </div> <!-- end folio-list, bricks -->
+
+                    </div> <!-- end column  -->
+                </div> <!-- end s-portfolio__content -->
+
+           
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="plugins.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
